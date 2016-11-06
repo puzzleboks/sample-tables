@@ -34,7 +34,8 @@
     }
 
     table .test {
-      display: none;
+      /*display: none;*/
+      visibility: hidden;
     }
 
     table tr {
