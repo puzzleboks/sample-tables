@@ -62,7 +62,7 @@
     }
 
     table td:before {
-      content: attr(headers);
+      content: attr(data-label);
       float: left;
       /*text-transform: uppercase;*/
       font-weight: bold;
