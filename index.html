@@ -5,125 +5,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Responsive Table CSS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script>
-			$(document).ready(function(){
-			});
-		</script>
 </head>
 
 <body>
-  <h1>This is a Heading - Responsive Tables</h1>
+  <div class="container">
+  <h1 tabindex="0">Accessible Responsive Table Test</h1>
+
   <table>
-    <caption><h4>This is the Table Caption</h4></caption>
     <tbody>
-      <tr class="test">
-        <th id="reason-for-payment">Reason for Payment</th>
-        <th id="payment-type">Payment Type</th>
-        <th id="tax-year">Tax Year</th>
-        <th id="amount-owed">Amount Owed</th>
+      <tr>
+        <th id="Reason-for-Payment" class="mobile-only">Reason for Payment</th>
       </tr>
       <tr>
-        <td headers="reason-for-payment" data-label="Reason for Payment">Shared Responsibility Payment (select Installment Agreement)</td>
-        <td headers="payment-type" data-label="Payment Type">Health Care (Form 1040)</td>
-        <td headers="tax-year" data-label="Tax Year">2014</td>
-        <td headers="amount-owed" data-label="Amount Owed">$644.57</td>
+        <td headers="Reason-for-Payment">Shared Responsibility Payment (select Installment Agreement)</td>
       </tr>
       <tr>
-        <td headers="reason-for-payment" data-label="Reason for Payment">Tax Return or Notice</td>
-        <td headers="payment-type" data-label="Payment Type">1040</td>
-        <td headers="tax-year" data-label="Tax Year">2013</td>
-        <td headers="amount-owed" data-label="Amount Owed">$205.325</td>
-      </tr>
+        <th class="mobile-only">Payment Type</th>
+        <td headers="Payment-Type">Health Care (Form 1040)</td>
+      </tr>  
+      <tr>
+        <th class="mobile-only">Tax Year</th>
+        <td headers="Tax-Year">2014</td>
+      </tr>  
+      <tr>
+        <th class="mobile-only">Amount Owed</th>
+        <td headers="Amount-Owed">$644.57</td>
+      </tr>  
     </tbody>
   </table>
+    
   
-  <!--<div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-8">
-        <table class="table table-bordered">
-          <caption><h4 id="jaws-caption">Jaws</h4></caption>
-          <tbody>
-            <tr>
-              <th id="jaws-actions" class="th-label-header">Action</th>
-              <th id="jaws-commands" class="th-value-header">Commands</th>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Virtual HTML Features</td>
-              <td headers="jaws-commands" class="td-value">INSERT + F3</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Links</td>
-              <td headers="jaws-commands" class="td-value">INSERT + F7</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Next Link</td>
-              <td headers="jaws-commands" class="td-value">TAB</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Prior Link</td>
-              <td headers="jaws-commands" class="td-value">SHIFT + TAB</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Headings</td>
-              <td headers="jaws-commands" class="td-value">INSERT + F6</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List of Form Fields</td>
-              <td headers="jaws-commands" class="td-value">INSERT + F5</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Buttons</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + B</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Combo Boxes</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + C</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Edit Boxes</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + E</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Radio Buttons</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + A</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Check Boxes</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + X</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Tables</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + T</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Read from Beginning of Row to Current Cell</td>
-              <td headers="jaws-commands" class="td-value">INSERT + SHIFT + HOME</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Read from Current Cell to End of Row</td>
-              <td headers="jaws-commands" class="td-value">INSERT + SHIFT + PAGE UP</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Read the current row</td>
-              <td headers="jaws-commands" class="td-value">SHIFT + UP ARROW</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">Read the current column</td>
-              <td headers="jaws-commands" class="td-value">SHIFT + NUMPAD 5</td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List Frames</td>
-              <td headers="jaws-commands" class="td-value">INSERT + F9 </td>
-            </tr>
-            <tr>
-              <td headers="jaws-actions" class="td-label">List All Ordered, Unordered, and Definition Lists</td>
-              <td headers="jaws-commands" class="td-value">INSERT + CTRL + L</td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-  </div>-->
-</body>
 
+  </div>
+  </body>
 </html>
