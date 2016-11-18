@@ -15,31 +15,28 @@
   <h1 tabindex="0">Accessible Responsive Table Test</h1>
 
   <table>
+    <caption>
+      Table 1: One-column (mobile) to four-column (desktop)
+    </caption>
     <tbody>
-      <tr>
-        <th id="reason-for-payment" class="mobile-only">Reason for Payment</th>
-      </tr>
-      <tr>
-        <td headers="reason-for-payment">Shared Responsibility Payment (select Installment Agreement)</td>
-      </tr>
-      <tr>
-        <th id="payment-type" class="mobile-only">Payment Type</th>
-      </tr>
-      <tr>
-        <td headers="payment-type">Health Care (Form 1040)</td>
-      </tr>
-      <tr>
-        <th id="tax-year" class="mobile-only">Tax Year</th>
-      </tr>
-      <tr>
-        <td headers="tax-year">2014</td>
-      </tr>
-      <tr>
-        <th id="amount-owed" class="mobile-only">Amount Owed</th>
-      </tr>
-      <tr>
-        <td headers="amount-owed">$644.57</td>
-      </tr>  
+      <tr><th id="reason-for-payment" class="mobile-only">Reason for Payment</th></tr>
+      <tr><td headers="reason-for-payment">Shared Responsibility Payment (select Installment Agreement)</td></tr>
+      <tr><th id="payment-type" class="mobile-only">Payment Type</th></tr>
+      <tr><td headers="payment-type">Health Care (Form 1040)</td></tr>
+      <tr><th id="tax-year" class="mobile-only">Tax Year</th></tr>
+      <tr><td headers="tax-year">2014</td></tr>
+      <tr><th id="amount-owed" class="mobile-only">Amount Owed</th></tr>
+      <tr><td headers="amount-owed">$644.57</td></tr>  
+    </tbody>
+    <tbody>
+      <tr><th class="mobile-only">Reason for Payment</th></tr>
+      <tr><td headers="reason-for-payment">Tax Return or Notice</td></tr>
+      <tr><th class="mobile-only">Payment Type</th></tr>
+      <tr><td headers="payment-type">1040</td></tr>
+      <tr><th class="mobile-only">Tax Year</th></tr>
+      <tr><td headers="tax-year">2013</td></tr>
+      <tr><th class="mobile-only">Amount Owed</th></tr>
+      <tr><td headers="amount-owed">$205.25</td></tr>  
     </tbody>
   </table>
     
