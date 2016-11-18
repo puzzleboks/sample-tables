@@ -27,7 +27,15 @@
     /*letter-spacing: 1px;*/
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 600px) {
+
+    .mobile-only {
+      display: none;
+    }
+
+    tbody > tr {
+      display: table-cell;
+    }
 
     table {
       /*border: 0;*/
