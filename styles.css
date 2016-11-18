@@ -28,7 +28,7 @@
   }
 
   @media screen and (max-width: 601px) {
-    .bloog {
+    .wide-table-header-row {
       display: none;
     }
   }
