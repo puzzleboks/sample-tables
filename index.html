@@ -14,29 +14,37 @@
   <div class="container">
   <h1 tabindex="0">Accessible Responsive Table Test</h1>
 
-  <table>
+  <table class="table table-bordered">
     <caption>
       Table 1: One-column (mobile) to four-column (desktop)
     </caption>
-    <tbody>
-      <tr><th id="reason-for-payment" class="mobile-only">Reason for Payment</th></tr>
-      <tr class="test"><td headers="reason-for-payment">Shared Responsibility Payment (select Installment Agreement)</td></tr>
-      <tr><th id="payment-type" class="mobile-only">Payment Type</th></tr>
-      <tr class="test"><td headers="payment-type">Health Care (Form 1040)</td></tr>
-      <tr><th id="tax-year" class="mobile-only">Tax Year</th></tr>
-      <tr><td headers="tax-year">2014</td></tr>
-      <tr><th id="amount-owed" class="mobile-only">Amount Owed</th></tr>
-      <tr><td headers="amount-owed">$644.57</td></tr>  
+    <tbody class="bloog">
+      <tr>
+        <th id="rfp">Reason for Payment</th>
+        <th id="pt">Payment Type</th>
+        <th id="ty">Tax Year</th>
+        <th id="ao">Amount Owed</th>
+      </tr>
     </tbody>
-    <tbody>
-      <tr><th class="mobile-only">Reason for Payment</th></tr>
-      <tr><td headers="reason-for-payment">Tax Return or Notice</td></tr>
-      <tr><th class="mobile-only">Payment Type</th></tr>
-      <tr><td headers="payment-type">1040</td></tr>
-      <tr><th class="mobile-only">Tax Year</th></tr>
-      <tr><td headers="tax-year">2013</td></tr>
-      <tr><th class="mobile-only">Amount Owed</th></tr>
-      <tr><td headers="amount-owed">$205.25</td></tr>  
+    <tbody class="test">
+      <tr class="mobile-only"><th id="reason-for-payment">Reason for Payment</th></tr>
+      <tr class="desktop-only"><td headers="reason-for-payment">Shared Responsibility Payment (select Installment Agreement)</td></tr>
+      <tr class="mobile-only"><th id="payment-type">Payment Type</th></tr>
+      <tr class="desktop-only"><td headers="payment-type">Health Care (Form 1040)</td></tr>
+      <tr class="mobile-only"><th id="tax-year">Tax Year</th></tr>
+      <tr class="desktop-only"><td headers="tax-year">2014</td></tr>
+      <tr class="mobile-only"><th id="amount-owed">Amount Owed</th></tr>
+      <tr class="desktop-only"><td headers="amount-owed">$644.57</td></tr>  
+    </tbody>
+    <tbody class="test">
+      <tr class="mobile-only"><th>Reason for Payment</th></tr>
+      <tr class="desktop-only"><td headers="reason-for-payment">Tax Return or Notice</td></tr>
+      <tr class="mobile-only"><th>Payment Type</th></tr>
+      <tr class="desktop-only"><td headers="payment-type">1040</td></tr>
+      <tr class="mobile-only"><th>Tax Year</th></tr>
+      <tr class="desktop-only"><td headers="tax-year">2013</td></tr>
+      <tr class="mobile-only"><th>Amount Owed</th></tr>
+      <tr class="desktop-only"><td headers="amount-owed">$205.25</td></tr>  
     </tbody>
   </table>
     
