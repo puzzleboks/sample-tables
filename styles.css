@@ -19,6 +19,33 @@
     /*display: none;*/
 }
 
+
+
+/*no table table*/
+.no-table-table {
+  /*display: table;*/
+}
+
+div.no-table-table {
+  display: table;
+}
+
+div.no-table-table .headers {
+  display: table-row;
+}
+
+div.no-table-table .row {
+  display: table-row;
+}
+
+div.no-table-table .cell {
+  display: table-cell;
+}
+
+
+
+
+
 /*Media queries*/
 @media screen and (max-width: 40em) {
   .wide-table-header-row {
