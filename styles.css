@@ -15,11 +15,15 @@
   border: 0em;
 }
 
+.wide-table-header-row {
+    display: none;
+}
+
 /*Media queries*/
 @media screen and (max-width: 40em) {
-  .wide-table-header-row {
+  /*.wide-table-header-row {
     display: none;
-  }
+  }*/
 }
 
 @media screen and (min-width: 40em) {
@@ -30,4 +34,8 @@
   .mobile-only {
     display: none;
   }
+
+  .wide-table-header-row {
+    display: table-header-group;
+}
 }
