@@ -1,8 +1,8 @@
+/* Bootstrap overrides */
 .table-bordered {
   border: 0em;
 }
 
-/* Bootstrap overrides */
 .table-bordered > tbody.responsive-table-rows > tr > td, .table-bordered > tbody.responsive-table-rows > tr > th {
   border: 0em;
 }
@@ -16,14 +16,14 @@
 }
 
 .wide-table-header-row {
-    display: none;
+    /*display: none;*/
 }
 
 /*Media queries*/
 @media screen and (max-width: 40em) {
-  /*.wide-table-header-row {
+  .wide-table-header-row {
     display: none;
-  }*/
+  }
 }
 
 @media screen and (min-width: 40em) {
@@ -36,7 +36,7 @@
   }
 
   .wide-table-header-row {
-    display: table-header-group;
+    /*display: table-header-group;*/
   }
 
   tbody.responsive-table-rows {
