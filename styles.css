@@ -37,5 +37,9 @@
 
   .wide-table-header-row {
     display: table-header-group;
-}
+  }
+
+  tbody.responsive-table-rows {
+    display: table-row;
+  }
 }
