@@ -42,13 +42,13 @@
   border: 0em;
 }
 
-  @media screen and (max-width: 601px) {
+  @media screen and (max-width: 40em) {
     .wide-table-header-row {
       display: none;
     }
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 40em) {
 
     .desktop-only {
       display: table-cell;
