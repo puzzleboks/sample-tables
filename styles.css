@@ -19,6 +19,10 @@
     /*display: none;*/
 }
 
+tr.responsive-table-rows {
+    display: table-row-group;
+}
+
 
 
 /*no table table*/
@@ -66,7 +70,7 @@ div.no-table-table .cell {
     /*display: table-header-group;*/
   }
 
-  tbody.responsive-table-rows {
+  tr.responsive-table-rows {
     display: table-row;
   }
 }
