@@ -19,7 +19,7 @@
     /*display: none;*/
 }
 
-tr.responsive-table-rows {
+tbody.responsive-table-rows {
     display: table-row-group;
 }
 
@@ -70,7 +70,7 @@ div.no-table-table .cell {
     /*display: table-header-group;*/
   }
 
-  tr.responsive-table-rows {
+  tbody.responsive-table-rows {
     display: table-row;
   }
 }
